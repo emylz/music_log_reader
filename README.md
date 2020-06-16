@@ -39,3 +39,14 @@ This library is used to get the ISO code of the countries.
  There are also packages like Collections, os, random itertools or sys which are built-in modules in Python3.
 
 ## Run the scripts
+
+The scripts run on Linux. Open a konsole and go to the directory where your project is located. The project files and folders look like this : 
+```bash
+.
+├── README
+├── scripts
+    └── log_generator.py
+    └── log_reader.py
+    └── top_song_by_country.py
+    └── top_song_by_user.py
+    └── write_file.py
