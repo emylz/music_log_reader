@@ -25,6 +25,17 @@ The solution is composed by four scripts (without the log generator) :
 
 You have to get following packages installed on your machine. You can get them with the following Linux commands:
 
-
+ - PyCountry
+ ```bash
+ pip3 install pycountry
+ ```
+This library is used to get the ISO code of the countries.
+ 
+ - Numpy
+```bash
+ pip3 install numpy
+ ``` 
+ 
+ There are also packages like Collections, os, random itertools or sys which are built-in modules in Python3.
 
 ## Run the scripts
