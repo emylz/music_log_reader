@@ -88,5 +88,26 @@ python3 top_song_by_user.py YYYYMMDD
 With the date as input, the script will find in data the associated dictionaries and compute the last file user_top50_YYYYMMDD.txt with information by country. A new directory users will be created with the file.
 
 
+Now the project looks like :
+```bash
+.
+├── README
+├── scripts
+    └── log_generator.py
+    └── log_reader.py
+    └── top_song_by_country.py
+    └── top_song_by_user.py
+    └── write_file.py
+├── data
+    └── countriesStream_YYYYMMDD.npy
+    └── usersStream_0_YYYYMMDD.npy
+    ...
+    └── usersStream_n_YYYYMMDD.npy
+├── countries
+    └── country_top50_YYYYMMDD.txt
+└── users
+    └── user_top50_YYYYMMDD.txt
+```
+
 
 
