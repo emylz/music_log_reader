@@ -54,7 +54,7 @@ The scripts run on Linux. Open a konsole and go to the directory scripts of the 
     └── write_file.py
 ```
 
-If you have logs files, you can skip the following instruction and go to [link1](#Run the scripts)
+If you have logs files, you can skip the following instruction and go to [link](#link)
 
 If you do not have log file to read you can use the log_generator script to generate a log. You can choose the number of user, of song and of streams at the beginning of the log.
 
@@ -64,7 +64,7 @@ python3 log_generator.py YYYYMMDD
 ```
 where YYYYMMDD is the date of the streams.
 
-### Run the scripts
+### <a id="link">Run the scripts
 
 If you have 
 
