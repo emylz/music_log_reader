@@ -60,12 +60,16 @@ def top_by_country():
         try:
 
             c = country.alpha_2
-
+            
+            #First check if there are streams from the current country
             #countries_list[c] contains all the listening of c
             #Counter() will count all the repetition of each song id
             #write_file function will return a string which will be stored in result
             #result is the variable which will written in the output file
-            result.append(write_file(Counter(countries_list[c]), c))
+            if(c in countries_list):
+                result.append(write_file(Counter(countries_list[c]), c))
+                
+                
         except OSError as e:
             print(e)
 
