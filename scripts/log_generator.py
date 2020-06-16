@@ -32,7 +32,7 @@ date = argv[1]
 def write_log_file(date_listening):
 
 	#File name of the output log
-    file_name = "./listen-"+date+".log"
+    file_name = "../listen-"+date+".log"
 
     #tmp is a string where all the log will be stored
     tmp = ''
