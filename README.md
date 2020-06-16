@@ -109,5 +109,5 @@ Now the project looks like :
     └── user_top50_YYYYMMDD.txt
 ```
 
-You can now find your file in user and country directories.
+You can now find your files in user and country directories.
 
