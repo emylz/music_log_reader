@@ -66,5 +66,27 @@ where YYYYMMDD is the date of the streams.
 
 ### <a id="link">Run the scripts
 
-If you have 
+You have logs files. You can start to analyze the logs.
+
+First you have to run log_read.py with:
+```bash
+python3 log_generator.py path/to/your/log/name_log.log
+```
+The script will read the log you passed as input. After the processing, there will be a data directory that will be created in the main directory (the root of your project). The data directory contain dictionary with the extracted data from the logs.
+
+Then run top_song_by_country.py with:
+First you have to run log_read.py with:
+```bash
+python3 top_song_by_country.py YYYYMMDD
+```
+With the date as input, the script will find in data the associated dictionary and compute the last file country_top50_YYYYMMDD.txt with information by country. A new directory countries will be created with the file.
+
+This is the same for top_song_by_user.py:
+```bash
+python3 top_song_by_user.py YYYYMMDD
+```
+With the date as input, the script will find in data the associated dictionaries and compute the last file user_top50_YYYYMMDD.txt with information by country. A new directory users will be created with the file.
+
+
+
 
