@@ -10,7 +10,8 @@ Theses scripts have been implemented with Python 3.
 
 The solution is composed by four scripts (without the log generator) : 
 
- - log_reader.py : this script reads the log as input. It will sort its information and will create numpy datafiles as output. The first one is countriesStream_YYYYMMDD.npy. This is a dictionary all the streams sorted by country for the date YYYYMMDD. The other files are usersStream_i_YYYYMMDD.npy. This is several slices of one big dictionary with the streams sorted by user for the date YYYYMMDD. i is the number of the slice.
+ - log_reader.py : this script reads the log as input. It will sort its information and will create numpy datafiles as output. The first one is countriesStream_YYYYMMDD.npy. This is a dictionary all the streams sorted by country for the date YYYYMMDD. The other files are usersStream_i_YYYYMMDD.npy. Theses are several slices of one big dictionary with the streams sorted by user for the date YYYYMMDD. i is the number of the slice. 
+  Theses slices are used to reduce the memory used by the script to write information by users. 
  
  - top_song_by_country.py :  this script compute the number of streams by country for each song in the log file. It takes as input the date of the day where we want the information. It produces as in put a file with the information sorted by country.
  
