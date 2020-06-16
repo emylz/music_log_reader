@@ -72,7 +72,7 @@ First you have to run log_read.py with:
 ```bash
 python3 log_generator.py path/to/your/log/name_log.log
 ```
-The script will read the log you passed as input. After the processing, there will be a data directory that will be created in the main directory (the root of your project). The data directory contain dictionary with the extracted data from the logs.
+The script will read the log you passed as input with its path. After the processing, there will be a data directory that will be created in the main directory (the root of your project). The data directory contain dictionary with the extracted data from the logs.
 
 Then run top_song_by_country.py with:
 First you have to run log_read.py with:
@@ -109,5 +109,5 @@ Now the project looks like :
     └── user_top50_YYYYMMDD.txt
 ```
 
-
+You can now find your file in user and country directories.
 
