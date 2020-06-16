@@ -4,7 +4,7 @@
 
 This is a set of Python scripts to analyze logs. There is a set of logs files with streams in differents countries by differents users at a given date. Theses scripts allow to compute two file by day : one with the streams by country and one with the streams by user.
 
-Theses scripts have been implemented with Python 3.
+Theses scripts have been implemented with Python 3 and work with Linux.
 
 ## Solution used
 
@@ -21,11 +21,9 @@ The solution is composed by four scripts (without the log generator) :
 
 
 
-
-
 ## Setup
 
-
+You have to get following packages installed on your machine. You can get them with the following Linux commands:
 
 
 
