@@ -85,7 +85,7 @@ This is the same for top_song_by_user.py:
 ```bash
 python3 top_song_by_user.py YYYYMMDD
 ```
-With the date as input, the script will find in data the associated dictionaries and compute the last file user_top50_YYYYMMDD.txt with information by country. A new directory named "users" will be created with the file.
+With the date as input, the script will find in the "data" directory the associated dictionaries and compute the last file user_top50_YYYYMMDD.txt with information by country. A new directory named "users" will be created with the file.
 
 
 Now the project looks like :
