@@ -79,13 +79,13 @@ First you have to run log_read.py with:
 ```bash
 python3 top_song_by_country.py YYYYMMDD
 ```
-With the date as input, the script will find in data the associated dictionary and compute the last file country_top50_YYYYMMDD.txt with information by country. A new directory countries will be created with the file.
+With the date as input, the script will find in data the associated dictionary and compute the last file country_top50_YYYYMMDD.txt with information by country. A new directory named "countries" will be created with the file.
 
 This is the same for top_song_by_user.py:
 ```bash
 python3 top_song_by_user.py YYYYMMDD
 ```
-With the date as input, the script will find in data the associated dictionaries and compute the last file user_top50_YYYYMMDD.txt with information by country. A new directory users will be created with the file.
+With the date as input, the script will find in data the associated dictionaries and compute the last file user_top50_YYYYMMDD.txt with information by country. A new directory named "users" will be created with the file.
 
 
 Now the project looks like :
