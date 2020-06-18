@@ -76,9 +76,9 @@ where YYYYMMDD is the date of the streams.
 
 You have logs files. You can start to analyze the logs.
 
-First you have to run log_read.py with:
+First you have to run log_reader.py with:
 ```bash
-python3 log_generator.py path/to/your/log/name_log.log
+python3 log_reader.py path/to/your/log/name_log.log
 ```
 The script will read the log you passed as input with its path. After the processing, there will be a "data" directory that will be created in the main directory (the root of your project). The "data" directory contains dictionary with the extracted data from the logs.
 
