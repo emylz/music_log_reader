@@ -74,8 +74,8 @@ def top_by_user():
                 #write_file function will return a string which will be stored in result
                 #result is the variable which will written in the output file
                 result.append(write_file(Counter(users_list[user]), user))
-            except OSError as e:
-                print(e) 
+            except:
+                print("Error with user number", user)
 
         #We make only few writes operations to reduce the execution time
         open(file_path, "a").write("\n".join(result))
