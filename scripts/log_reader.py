@@ -119,30 +119,37 @@ def stream():
     #to reduce the execution time
     for cat in listening_list:
         try:
-
+            
             #Split the line according to the log format
             tmp = cat.split(" | ")
 
-            #Remove the line break ("\n")
-            tmp[2] = tmp[2].rstrip()
 
             #Extract the information
             #song_id and user_id are converted in int
             #because this is more memory efficiant than in string
-            song_id = int(tmp[0])
-            user_id = int(tmp[1])
-            country = tmp[2]
+            #rstrip() is used in case of there is a malformated log with more spaces
+            song_id = int(tmp[0].rstrip())
+            user_id = int(tmp[1].rstrip())
 
- 
-            #Sort information for the countries
-            stream_by_country(song_id, country)
 
-            #Sort information for the user
-            stream_by_user(song_id, user_id)
+            #Remove the line break ("\n") with rstrip()
+            country = tmp[2].rstrip()
 
-        except OSError as e:
+            #Check if the log has no problems
+            if(len(tmp) == 3 and len(country) == 2):
+
+                #Sort information for the countries
+                stream_by_country(song_id, country)
+
+                #Sort information for the user
+                stream_by_user(song_id, user_id)
+
+            else:
+            	print("Corrupted log found")
+
+        except :
             #Print the error in case of error like corrupted log
-            print(e)
+            print("Corrupted log found")
     
     print("Save read data")
 
