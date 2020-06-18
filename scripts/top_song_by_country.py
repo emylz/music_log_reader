@@ -31,7 +31,7 @@ country_path = data_directory+"/countriesStream_"+date+".npy"
 
 
 #Get the extracted data from the saved dictionary
-tmp = np.load(country_path)
+tmp = np.load(country_path, allow_pickle = True)
 
 
 #Transform the ridden data to dictionary
