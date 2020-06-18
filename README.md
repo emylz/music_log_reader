@@ -10,16 +10,16 @@
 
 ## Introduction <a id="link1">
 
-This is a set of Python scripts to analyze logs. There is a set of logs files with streams in different countries by different users at a given date. Theses scripts enable to compute two files by day : one with the streams by country and one with the streams by user.
+This is a set of Python scripts to analyze logs. There is a set of logs files with streams in different countries by different users at a given date. These scripts enable to compute two files by day : one with the streams by country and one with the streams by user.
 
-Theses scripts have been implemented with Python 3 and work with Linux.
+These scripts have been implemented with Python 3 and work with Linux.
 
 ## Solution used <a id="link2">
 
 The solution is composed by four scripts (without the log generator) : 
 
- - log_reader.py : this script reads the log as input. It will sort its information and will create numpy datafiles as output. The first one is countriesStream_YYYYMMDD.npy. This is a dictionary with all the streams sorted by country for the date YYYYMMDD. The other files are usersStream_i_YYYYMMDD.npy. Theses are several slices of one big dictionary with the streams sorted by user for the date YYYYMMDD. The letter i is the number of the slice. 
-  Theses slices are used to reduce the memory used by the script to write information by users. 
+ - log_reader.py : this script reads the log as input. It will sort its information and will create numpy datafiles as output. The first one is countriesStream_YYYYMMDD.npy. This is a dictionary with all the streams sorted by country for the date YYYYMMDD. The other files are usersStream_i_YYYYMMDD.npy. These are several slices of one big dictionary with the streams sorted by user for the date YYYYMMDD. The letter i is the number of the slice. 
+  These slices are used to reduce the memory used by the script to write information by users. 
  
  - top_song_by_country.py :  this script computes the number of streams by country for each song in the log file. It takes as input the date of the day where we want the information. It produces as input a file with the information sorted by country.
  
