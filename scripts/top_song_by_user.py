@@ -51,7 +51,7 @@ def top_by_user():
 
         #Get the extracted data from the saved dictionary
         if path.exists(users_path):
-            user_tmp = np.load(users_path)
+            user_tmp = np.load(users_path, allow_pickle=True)
 
             #Transform the ridden data to dictionary
             users_list = user_tmp.item()
