@@ -50,7 +50,7 @@ This library is used to get the ISO code of the countries.
 
 ### Get log <a id="link5">
 
-The scripts run on Linux. Open a konsole and go to the directory scripts of the project. The project files and folders look like this : 
+The scripts run on Linux. Open a console and go to the directory scripts of the project. The project files and folders look like this : 
 ```bash
 .
 ├── README
