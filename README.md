@@ -1,5 +1,6 @@
 # Music log reader
 
+## Table of contents
 - [Introduction](#link1)
 - [Solution used](#link2)
 - [Setup](#link3)
