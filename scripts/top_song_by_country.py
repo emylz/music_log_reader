@@ -70,8 +70,8 @@ def top_by_country():
                 result.append(write_file(Counter(countries_list[c]), c))
                 
                 
-        except OSError as e:
-            print(e)
+        except:
+            print("Error with", c.name)
 
 
     #We make only one write operation to reduce the execution time
