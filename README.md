@@ -1,12 +1,19 @@
 # Music log reader
 
-## Introduction
+- [Introduction](#link1)
+- [Solution used](#link2)
+- [Setup](#link3)
+- [Run](#link4)
+   - [Get log](#link5)
+   - [Run the scripts](#link6)
+
+## Introduction <a id="link1">
 
 This is a set of Python scripts to analyze logs. There is a set of logs files with streams in differents countries by differents users at a given date. Theses scripts allow to compute two files by day : one with the streams by country and one with the streams by user.
 
 Theses scripts have been implemented with Python 3 and work with Linux.
 
-## Solution used
+## Solution used <a id="link2">
 
 The solution is composed by four scripts (without the log generator) : 
 
@@ -21,7 +28,7 @@ The solution is composed by four scripts (without the log generator) :
 
 
 
-## Setup
+## Setup <a id="link3">
 
 You have to get following packages installed on your machine. You can get them with the following Linux commands:
 
@@ -38,9 +45,9 @@ This library is used to get the ISO code of the countries.
  
  There are also packages like Collections, os, random itertools or sys which are built-in modules in Python3.
 
-## Run
+## Run <a id="link4">
 
-### Get log
+### Get log <a id="link5">
 
 The scripts run on Linux. Open a konsole and go to the directory scripts of the project. The project files and folders look like this : 
 ```bash
@@ -54,7 +61,7 @@ The scripts run on Linux. Open a konsole and go to the directory scripts of the 
     └── write_file.py
 ```
 
-If you have logs files, you can skip the following instruction and go to [Run the scripts](#link).
+If you have logs files, you can skip the following instruction and go to [Run the scripts](#link6).
 
 If you do not have log file to read you can use the log_generator script to generate a log. You can choose the number of user, of song and of streams at the beginning of the log.
 
@@ -64,7 +71,7 @@ python3 log_generator.py YYYYMMDD
 ```
 where YYYYMMDD is the date of the streams.
 
-### <a id="link">Run the scripts
+###  Run the scripts <a id="link6"> 
 
 You have logs files. You can start to analyze the logs.
 
