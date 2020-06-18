@@ -16,9 +16,10 @@ These scripts have been implemented with Python 3 and work with Linux.
 
 ## Solution used <a id="link2">
 
-The solution is composed by four scripts (without the log generator) : 
+**The solution is composed by four scripts (without the log generator) :**
 
- - log_reader.py : this script reads the log as input. It will sort its information and will create numpy datafiles as output. The first one is countriesStream_YYYYMMDD.npy. This is a dictionary with all the streams sorted by country for the date YYYYMMDD. The other files are usersStream_i_YYYYMMDD.npy. These are several slices of one big dictionary with the streams sorted by user for the date YYYYMMDD. The letter i is the number of the slice. 
+ - log_reader.py : this script reads the log as input. It will sort its information and will create numpy datafiles as output. The first one is countriesStream_YYYYMMDD.npy. This is a dictionary with all the streams sorted by country for the date YYYYMMDD. The other files are usersStream_i_YYYYMMDD.npy. 
+ There are several slices of one big dictionary with the streams sorted by user for the date YYYYMMDD. The letter i is the number of the slice. 
   These slices are used to reduce the memory used by the script to write information by users. 
  
  - top_song_by_country.py :  this script computes the number of streams by country for each song in the log file. It takes as input the date of the day where we want the information. It produces as input a file with the information sorted by country.
@@ -76,19 +77,19 @@ where YYYYMMDD is the date of the streams.
 
 You have logs files. You can start to analyze the logs.
 
-First you have to run log_reader.py with:
+**First you have to run log_reader.py with:**
 ```bash
 python3 log_reader.py path/to/your/log/name_log.log
 ```
 The script will read the log you passed as input with its path. After the processing, there will be a "data" directory that will be created in the main directory (the root of your project). The "data" directory contains dictionary with the extracted data from the logs.
 
-Then run top_song_by_country.py with.
+**Then run top_song_by_country.py with :**
 ```bash
 python3 top_song_by_country.py YYYYMMDD
 ```
 With the date as input, the script will find in the "data" directory the associated dictionary and computes the last file country_top50_YYYYMMDD.txt with information by country. A new directory named "countries" will be created with the file.
 
-This is the same for top_song_by_user.py:
+**This is the same for top_song_by_user.py :**
 ```bash
 python3 top_song_by_user.py YYYYMMDD
 ```
