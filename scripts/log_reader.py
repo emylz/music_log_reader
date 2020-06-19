@@ -158,7 +158,7 @@ def stream():
     print("Save data about the countries")
 
     #Save the dictionary with informations of the countries
-    #The dictionary will be save in the directory defined
+    #The dictionary will be saved in the directory defined
     #at the begining of the function
     #the date is added to make difference between dictionaries after saving
     country_path = directory+"/countriesStream_"+date+".npy"
