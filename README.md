@@ -5,6 +5,7 @@
 - [Solution used](#link2)
 - [Setup](#link3)
 - [Run](#link4)
+   - [Beginning](#link7)
    - [Get log](#link5)
    - [Run the scripts](#link6)
 
@@ -48,8 +49,8 @@ This library is used to get the ISO code of the countries.
  There are also packages like Collections, os, random itertools or sys which are built-in modules in Python3.
 
 ## Run <a id="link4">
-
-### Get log <a id="link5">
+   
+### Beginning <a id="link7">
 
 The scripts run on Linux. Open a console and go to the directory "scripts" of the project. The project files and folders look like this : 
 ```bash
@@ -63,6 +64,8 @@ The scripts run on Linux. Open a console and go to the directory "scripts" of th
     └── write_file.py
 ```
 
+### Get log <a id="link5">
+   
 If you have logs files, you can skip the following instruction and go to [Run the scripts](#link6).
 
 If you do not have log file to read you can use the log_generator script to generate a log. You can choose the number of user, of song and of streams at the beginning of the log.
