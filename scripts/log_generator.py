@@ -29,7 +29,7 @@ listening_count = 30000000
 date = argv[1]
 
 
-def write_log_file(date_listening):
+def write_log_file():
 
 	#File name of the output log
     file_name = "../listen-"+date+".log"
