@@ -37,13 +37,13 @@ You have to get following packages installed on your machine. You can get them w
 
  - PyCountry
  ```bash
- pip3 install pycountry
+ python3 -m pip install pycountry
  ```
 This library is used to get the ISO code of the countries.
  
  - Numpy
 ```bash
- pip3 install numpy
+ python3 -m pip install numpy
  ``` 
  
  There are also packages like Collections, os, random itertools or sys which are built-in modules in Python3.
