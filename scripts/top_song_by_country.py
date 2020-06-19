@@ -12,11 +12,11 @@ import numpy as np
 from collections import Counter
 from pycountry import countries
 
-#Manage where the file will be write and get
+#Manage where the files will be written 
 #Directory is where the result will be stored
 directory = "../countries"
 
-#data_directory is where data will be ridden
+#data_directory is where data will be read
 data_directory = "../data"
 
 #Get the date of the command line to find the right file
@@ -65,7 +65,7 @@ def top_by_country():
             #countries_list[c] contains all the listening of c
             #Counter() will count all the repetition of each song id
             #write_file function will return a string which will be stored in result
-            #result is the variable which will written in the output file
+            #result is the variable which will be written in the output file
             if(c in countries_list):
                 result.append(write_file(Counter(countries_list[c]), c))
                 
